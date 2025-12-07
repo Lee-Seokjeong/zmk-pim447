@@ -188,8 +188,8 @@ static void pimoroni_pim447_work_handler(struct k_work *work) {
   k_mutex_unlock(&data->data_lock);
 
   /* Calculate deltas */
-  int16_t delta_x = (int16_t)buf[0] - (int16_t)buf[1]; // LEFT - RIGHT (원래 코드와 순서 및 부호 변경)
-  int16_t delta_y = (int16_t)buf[2] - (int16_t)buf[3]; // UP - DOWN (원래 코드와 순서 및 부호 변경)
+  int16_t delta_y = (int16_t)buf[0] - (int16_t)buf[1]; // LEFT - RIGHT (원래 코드와 순서 및 부호 변경)
+  int16_t delta_x = (int16_t)buf[2] - (int16_t)buf[3]; // UP - DOWN (원래 코드와 순서 및 부호 변경)
 
   /* Report movement immediately if non-zero */
   if (delta_x != 0 || delta_y != 0) {
