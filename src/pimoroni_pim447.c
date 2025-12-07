@@ -16,7 +16,7 @@
 
 LOG_MODULE_REGISTER(zmk_pimoroni_pim447, LOG_LEVEL_DBG);
 
-volatile uint8_t PIM447_MOUSE_MAX_SPEED = 25;
+volatile uint8_t PIM447_MOUSE_MAX_SPEED = 100;
 volatile uint8_t PIM447_MOUSE_MAX_TIME = 5;
 volatile float PIM447_MOUSE_SMOOTHING_FACTOR = 1.3f;
 volatile uint8_t PIM447_SCROLL_MAX_SPEED = 1;
